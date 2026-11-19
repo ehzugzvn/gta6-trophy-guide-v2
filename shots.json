@@ -1,5 +1,1 @@
-[
-  { "file": "1-checklist.jpg", "path": "/", "viewport": { "width": 1280, "height": 800 } },
-  { "file": "2-silver.jpg", "path": "/", "grade": "silver", "viewport": { "width": 1280, "height": 800 } },
-  { "file": "3-bronze.jpg", "path": "/", "grade": "bronze", "scroll": 1400, "viewport": { "width": 1280, "height": 800 } }
-]
+[{"file":"01-cover.jpg","path":"/","view":"Route tab (home): 7-stage roadmap timeline with inline checkboxes, missable window alerts pinned per stage, progress-to-platinum bar (17 of 55 seeded earned) and the audit strip","viewport":{"height":800,"width":1280}},{"file":"02-tracker.jpg","path":"/","view":"Tracker tab with the Missable filter on (9 flagged trophies): verdict badges, windows and citation markers in every row; guide drawer open on Road to Rehabilitation","viewport":{"height":800,"width":1280}},{"file":"03-guide.jpg","path":"/","view":"Guide drawer on Positive Mental Attitude over the full Tracker table: 18-spot count, cited steps [1][5] and [1][2][4], Sources box with URLs, Chapter 1 missable banner and the disagree note","viewport":{"height":800,"width":1280}},{"file":"04-session.jpg","path":"/","view":"Session tab: per-stage session checklists in play order with session progress bars; spoiler shield ON in the header and hidden story trophies masked in the lists","viewport":{"height":800,"width":1280}}]
