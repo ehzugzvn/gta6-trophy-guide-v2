@@ -1,3 +1,4 @@
+// VICE ROUTE (gta6-trophy-guide-v2): a roadmap-first platinum route for the 55 GTA VI trophies — built by the v2 builder.
 // A working gta6-trophy-guide-01 entry (Node 22, standard library only): the guide is this directory's app/ folder,
 // plain static files a browser opens at app/index.html (ES modules, CSS, no build step), offline: it loads nothing
 // over the network, and its trophy list and guides are app/data/trophies.json. The program hands it in: it copies app/

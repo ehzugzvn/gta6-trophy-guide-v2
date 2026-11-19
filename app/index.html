@@ -3,23 +3,59 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>GTA VI trophy checklist</title>
+<title>VICE ROUTE — GTA VI Platinum Roadmap, Tracker &amp; Guide</title>
+<meta name="description" content="VICE ROUTE: the 7-stage platinum route for all 55 GTA VI trophies — missable windows pinned, every guide step cited, fully offline.">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header>
-  <h1>GTA VI trophy checklist</h1>
-  <p id="progress">0 of 55 earned</p>
+<header class="mast">
+  <div class="mast-row">
+    <div>
+      <div class="kicker">GRAND THEFT AUTO VI · PLAYSTATION 5 · 55 TROPHIES</div>
+      <h1>VICE ROUTE</h1>
+      <p class="sub">GTA VI Platinum Roadmap, Tracker &amp; Guide — what to do next, and what you can miss.</p>
+    </div>
+    <div class="mast-actions">
+      <button id="btn-export" type="button">⇩ Export progress</button>
+      <label class="btnlike">⇧ Import progress <input id="file-import" type="file" accept="application/json"></label>
+      <label class="spoiler-toggle"><input id="chk-spoiler" type="checkbox"> Spoiler shield <span id="spoiler-state">OFF</span></label>
+    </div>
+  </div>
+  <div class="progress-wrap">
+    <div class="progress-label"><span id="progress-text">0 of 55 earned · 0% to platinum</span><span id="grade-text"></span></div>
+    <div class="progress-bar"><div id="progress-fill"></div></div>
+  </div>
+  <div id="audit-strip" class="audit"></div>
+  <nav class="tabs">
+    <button class="tab active" data-tab="route" type="button">🗺 Route</button>
+    <button class="tab" data-tab="tracker" type="button">☰ Tracker</button>
+    <button class="tab" data-tab="session" type="button">▶ Session</button>
+  </nav>
 </header>
-<div class="controls">
-  <label>Grade <select id="grade"><option value="all">All</option><option value="platinum">Platinum</option><option value="gold">Gold</option><option value="silver">Silver</option><option value="bronze">Bronze</option></select></label>
-  <button id="export" type="button">Export progress</button>
-  <label class="import">Import progress <input id="import" type="file" accept="application/json"></label>
-</div>
-<table>
-  <thead><tr><th>Earned</th><th>Trophy</th><th>Grade</th><th>How to get it</th></tr></thead>
-  <tbody id="rows"></tbody>
-</table>
-<script type="module" src="app.js"></script>
+<main>
+  <section id="view-route"></section>
+  <section id="view-tracker" hidden>
+    <div class="filters">
+      <button class="chip active" data-filter="all" type="button">All 55</button>
+      <button class="chip" data-filter="story" type="button">Story</button>
+      <button class="chip" data-filter="missable" type="button">Missable</button>
+      <button class="chip" data-filter="collectibles" type="button">Collectibles</button>
+      <button class="chip" data-filter="activities" type="button">Activities</button>
+      <button class="chip" data-filter="coop" type="button">Co-op / Online</button>
+      <input id="search" type="search" placeholder="Search trophies…">
+    </div>
+    <div id="filter-note" class="filter-note"></div>
+    <div class="table-wrap"><table id="tracker-table">
+      <thead><tr><th>✓</th><th>Grade</th><th>Trophy — official name &amp; description</th><th>Kind</th><th>Missable</th><th>Count</th><th>Guide</th></tr></thead>
+      <tbody id="tracker-body"></tbody>
+    </table></div>
+    <div class="sources-box" id="sources-box"></div>
+  </section>
+  <section id="view-session" hidden></section>
+</main>
+<div id="drawer" class="drawer" hidden></div>
+<div id="scrim" class="scrim" hidden></div>
+<footer>VICE ROUTE · Fully offline — no network requests. Progress lives only in your browser (localStorage). No Rockstar logos, artwork or game screenshots are used.</footer>
+<script type="module" src="js/app.js"></script>
 </body>
 </html>
